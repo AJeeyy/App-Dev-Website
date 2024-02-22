@@ -89,33 +89,26 @@
 
 .container {
   display: flex;
-  margin-bottom: 25px;
-}
-
-.polaroid {
-  width: 20%;
-  background-color: rgb(173, 173, 172);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.482), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.polaroid img {
-  width: 100%;
-  height: auto;
+  margin-top: 10;
 }
 
 .content {
+  font-size: 20px;
   padding: 10px;
+  color: azure;
 }
 
-.content h1 {
+.name {
+  display: flex;
+  justify-content: center;
   font-size: 50px;
   font-style: oblique;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  margin: 0;
 }
 
-.content p {
+.description {
+  display: flex;
   color: #f2f2f2;
   font-size: 25px;
   font-style: oblique;
@@ -124,14 +117,23 @@
   margin: 0;
 }
 
+.polaroid {
+  width: 20%;
+  background-color: rgb(173, 173, 172);
+}
+
+.polaroid img {
+  width: 100%;
+  height: auto;
+}
+
 .video-container {
-  margin-left: 73px;
-  width: 50%;
+  width: 100%;
 }
 
 .video-container video {
-  width: 150%;
-  height: auto;
+  width: 100%;
+  height: fit-content;
 }
 
 a {
@@ -139,10 +141,13 @@ a {
   text-decoration: none;
 }
   
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 320) {
     .header {
       padding: 100px;
       font-size: 36px;
+    }
+    .name{
+      font-style: italic; 
     }
     
     .article {
@@ -153,5 +158,6 @@ a {
     .article video {
       margin-right: 20px;
     }
+
   }
   
